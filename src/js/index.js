@@ -7,39 +7,33 @@ import '../scss/main.scss';
 /* place your code below */
 
 console.log('HELLO 🚀')
-// szosty projekt --------->
 
+// szosty projekt --------->
 const h1 = document.querySelector('h1');
 const body = document.querySelector('body');
 document.body.addEventListener("mousemove", (e) => {
     console.log(e.clientX, e.clientY);
     // I need to display the parameters on the screen as H1
-
     //for browser
     //     h1.textContent = `${e.clientX}, ${e.clientY}`;
         // for whole screen
         // h1.textContent = `${e.screenX}, ${e.screenY}`;
-
         // for site with scroll
         // h1.textContent = `${e.pageX}, ${e.pageY}`;
         // next i need to change background colors if mose is moving
 
         // body.style.backgroundColor = `rgb(${e.clientX /3}, ${e.clientY /2}, ${e.clientX / e.clientY * 20})`;
-
         const x = e.clientX;
         const y = e.clientY;
-    h1.textContent = `${x}, ${y}`;
         const width = window.innerWidth;
         const height = window.innerHeight;
-
-        const red = x / width * 100;
-        const green = y / height * 100;
-        const blue = ((x / width * 100) + (y / height * 100)) /2;
-
-        body.style.backgroundColor = `rgb(${red}%, ${green}%, ${blue}%)`;
-
-
-
+        h1.textContent = `${x}, ${y}`;
+    //
+    //     const red = x / width * 100;
+    //     const green = y / height * 100;
+    //     const blue = ((x / width * 100) + (y / height * 100)) /2;
+    //
+    //     body.style.backgroundColor = `rgb(${red}%, ${green}%, ${blue}%)`;
 })
 
 // piatyty projekt --------->
