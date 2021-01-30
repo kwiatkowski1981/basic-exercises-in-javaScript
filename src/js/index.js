@@ -9,16 +9,14 @@ import '../scss/main.scss';
 console.log('HELLO 🚀')
 // szosty projekt --------->
 
+const h1 = document.querySelector('h1');
 
 document.body.addEventListener("mousemove", (e) => {
     console.log(e.clientX, e.clientY);
 
     // I need to display the parameters on the screen as H1
-
-    const h1 = document.querySelector('h1');
-
-    if (event.clientY || event.clientX) {
-        h1.textContent = `${event.clientX}, ${event.clientY}`;
+    if (e.clientY || e.clientX) {
+        h1.textContent = `${e.clientX}, ${e.clientY}`;
     } else {
         h1.textContent = `move the mouse`
     }
