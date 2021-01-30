@@ -10,7 +10,7 @@ console.log('HELLO 🚀')
 // szosty projekt --------->
 
 const h1 = document.querySelector('h1');
-
+const body = document.querySelector('body');
 document.body.addEventListener("mousemove", (e) => {
     console.log(e.clientX, e.clientY);
     // I need to display the parameters on the screen as H1
