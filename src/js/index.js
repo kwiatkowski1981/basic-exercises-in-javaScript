@@ -14,7 +14,15 @@ const h1 = document.querySelector('h1');
 document.body.addEventListener("mousemove", (e) => {
     console.log(e.clientX, e.clientY);
     // I need to display the parameters on the screen as H1
+    //for browser
         h1.textContent = `${e.clientX}, ${e.clientY}`;
+
+        // for whole screen
+        // h1.textContent = `${e.screenX}, ${e.screenY}`;
+
+        // for site with scroll
+        // h1.textContent = `${e.pageX}, ${e.pageY}`;
+
 })
 
 // piatyty projekt --------->
