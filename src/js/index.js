@@ -7,42 +7,53 @@ import '../scss/main.scss';
 /* place your code below */
 
 console.log('HELLO 🚀')
+// szosty projekt --------->
+
+
+document.body.addEventListener("mousemove", () => {
+    console.log(event.clientX, event.clientY);
+})
+
+
+
+
+
 // piatyty projekt --------->
-
-let size = 10;
-let orderElement = 1;
-
-const init = () => {
-    const body = document.querySelector('body');
-    const btn = document.createElement('button');
-    btn.style.width = 200 + "px";
-    btn.style.height = 60 + "px";
-    btn.style.margin = 100 + "px";
-    btn.style.backgroundColor = "lightgreen";
-    btn.textContent = "Stwórz listę";
-    body.appendChild(btn);
-
-    const ulElement = document.createElement('ul');
-    body.appendChild(ulElement);
-
-    btn.addEventListener("click", createElements)
-}
-
-const createElements = () => {
-
-    for (let i = 0; i <10; i++) {
-        const ulElement = document.querySelector('ul');
-        const liElement = document.createElement('li');
-        liElement.textContent = `element nr. : ${orderElement++}`;
-        liElement.style.fontSize = `${size}px`;
-        ulElement.appendChild(liElement);
-        size++;
-    }
-
-
-}
-
-init()
+//
+// let size = 10;
+// let orderElement = 1;
+//
+// const init = () => {
+//     const body = document.querySelector('body');
+//     const btn = document.createElement('button');
+//     btn.style.width = 200 + "px";
+//     btn.style.height = 60 + "px";
+//     btn.style.margin = 100 + "px";
+//     btn.style.backgroundColor = "lightgreen";
+//     btn.textContent = "Stwórz listę";
+//     body.appendChild(btn);
+//
+//     const ulElement = document.createElement('ul');
+//     body.appendChild(ulElement);
+//
+//     btn.addEventListener("click", createElements)
+// }
+//
+// const createElements = () => {
+//
+//     for (let i = 0; i <10; i++) {
+//         const ulElement = document.querySelector('ul');
+//         const liElement = document.createElement('li');
+//         liElement.textContent = `element nr. : ${orderElement++}`;
+//         liElement.style.fontSize = `${size}px`;
+//         ulElement.appendChild(liElement);
+//         size++;
+//     }
+//
+//
+// }
+//
+// init()
 //
 
 // czwarty projekt --------->
