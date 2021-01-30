@@ -13,14 +13,8 @@ const h1 = document.querySelector('h1');
 
 document.body.addEventListener("mousemove", (e) => {
     console.log(e.clientX, e.clientY);
-
     // I need to display the parameters on the screen as H1
-    if (e.clientY || e.clientX) {
         h1.textContent = `${e.clientX}, ${e.clientY}`;
-    } else {
-        h1.textContent = `move the mouse`
-    }
-
 })
 
 
