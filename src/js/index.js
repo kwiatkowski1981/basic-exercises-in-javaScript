@@ -25,6 +25,7 @@ document.body.addEventListener("mousemove", (e) => {
 
     // next i need to change background colors if mose is moving
 
+    body.style.backgroundColor = `rgb(${e.clientX}, ${e.clientY}, 100)`;
 })
 
 // piatyty projekt --------->
