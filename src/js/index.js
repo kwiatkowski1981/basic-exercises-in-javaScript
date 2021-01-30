@@ -12,6 +12,9 @@ console.log('HELLO 🚀')
 
 document.body.addEventListener("mousemove", () => {
     console.log(event.clientX, event.clientY);
+
+    // I need to display the parameters on the screen as H1
+
 })
 
 
