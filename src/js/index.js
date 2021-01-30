@@ -17,10 +17,6 @@ document.body.addEventListener("mousemove", (e) => {
         h1.textContent = `${e.clientX}, ${e.clientY}`;
 })
 
-
-
-
-
 // piatyty projekt --------->
 //
 // let size = 10;
