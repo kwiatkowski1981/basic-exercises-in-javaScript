@@ -38,10 +38,14 @@ body.addEventListener("click", (e) => {
     const yy = event.clientY;
     if ((xx % 2) && (yy % 2) == 0 ){
         console.log("sa parzyste");
+        body.style.backgroundColor = "red";
     } else if ((xx % 2) && (yy % 2) != 0 ){
+        body.style.backgroundColor = "blue";
         console.log("nie sa parzyste");
     } else {
-        console.log("sa rozne od siebie")
+        console.log("sa rozne od siebie");
+        body.style.backgroundColor = "green";
+
     }
 
 
