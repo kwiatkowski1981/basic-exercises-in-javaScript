@@ -11,8 +11,11 @@ console.log('HELLO 🚀')
 // szosty projekt --------->
 const h1 = document.querySelector('h1');
 const body = document.querySelector('body');
+
+const width = window.innerWidth;
+const height = window.innerHeight;
 document.body.addEventListener("mousemove", (e) => {
-    console.log(e.clientX, e.clientY);
+    // console.log(e.clientX, e.clientY);
     // I need to display the parameters on the screen as H1
     //for browser
     //     h1.textContent = `${e.clientX}, ${e.clientY}`;
@@ -25,9 +28,23 @@ document.body.addEventListener("mousemove", (e) => {
         // body.style.backgroundColor = `rgb(${e.clientX /3}, ${e.clientY /2}, ${e.clientX / e.clientY * 20})`;
         const x = e.clientX;
         const y = e.clientY;
-        const width = window.innerWidth;
-        const height = window.innerHeight;
         h1.textContent = `${x}, ${y}`;
+
+        })
+
+
+body.addEventListener("click", (e) => {
+    const xx = event.clientX;
+    const yy = event.clientY;
+    if ((xx % 2) && (yy % 2) == 0 ){
+        console.log("sa parzyste");
+    } else if ((xx % 2) && (yy % 2) != 0 ){
+        console.log("nie sa parzyste");
+    } else {
+        console.log("sa rozne od siebie")
+    }
+
+
     //
     //     const red = x / width * 100;
     //     const green = y / height * 100;
