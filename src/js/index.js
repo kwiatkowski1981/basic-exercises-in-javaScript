@@ -17,22 +17,28 @@ let divX = 150;
 let divY = 50;
 div.style.left = `${divX}px`;
 div.style.top = `${divY}px`;
+let drawActive = false;
+
 
 div.addEventListener("mousedown", () => {
 console.log("grab works");
 div.style.backgroundColor = "grey";
+drawActive = !drawActive;
 })
 
 div.addEventListener("mousemove", (e) => {
+    if (drawActive){
+        console.log("move works");
 divX = e.clientX;
 divY = e.clientY;
 div.style.left = `${divX - 100}px`;
 div.style.top = `${divY - 100}px`;
-})
+}})
 
 div.addEventListener("mouseup", () => {
 console.log("drop works");
 div.style.backgroundColor = "black";
+    drawActive = !drawActive;
 })
 
 
