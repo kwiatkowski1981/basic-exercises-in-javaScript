@@ -30,7 +30,7 @@ div.style.backgroundColor = "blue";
 
 div.addEventListener("mouseup", () => {
 console.log("drop works");
-div.style.backgroundColor = "red";
+div.style.backgroundColor = "black";
 })
 
 
