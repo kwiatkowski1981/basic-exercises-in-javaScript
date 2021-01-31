@@ -20,6 +20,7 @@ div.style.top = `${divY}px`;
 
 div.addEventListener("mousedown", () => {
 console.log("it works");
+div.style.backgroundColor = "grey";
 })
 
 
