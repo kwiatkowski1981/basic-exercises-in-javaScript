@@ -19,9 +19,24 @@ div.style.left = `${divX}px`;
 div.style.top = `${divY}px`;
 
 div.addEventListener("mousedown", () => {
-console.log("it works");
+console.log("grab works");
 div.style.backgroundColor = "grey";
 })
+
+div.addEventListener("mousemove", () => {
+console.log("move works");
+div.style.backgroundColor = "blue";
+})
+
+div.addEventListener("mouseup", () => {
+console.log("drop works");
+div.style.backgroundColor = "red";
+})
+
+
+
+
+
 
 
 
