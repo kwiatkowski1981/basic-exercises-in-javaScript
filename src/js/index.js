@@ -7,14 +7,18 @@ import '../scss/main.scss';
 /* place your code below */
 
 console.log('HELLO 🚀')
+// siódmy projekt --------->
+
+
+
 
 // szosty projekt --------->
-const h1 = document.querySelector('h1');
-const body = document.querySelector('body');
-
-const width = window.innerWidth;
-const height = window.innerHeight;
-document.body.addEventListener("mousemove", (e) => {
+// const h1 = document.querySelector('h1');
+// const body = document.querySelector('body');
+//
+// const width = window.innerWidth;
+// const height = window.innerHeight;
+// document.body.addEventListener("mousemove", (e) => {
     // console.log(e.clientX, e.clientY);
     // I need to display the parameters on the screen as H1
     //for browser
@@ -26,38 +30,38 @@ document.body.addEventListener("mousemove", (e) => {
         // next i need to change background colors if mose is moving
 
         // body.style.backgroundColor = `rgb(${e.clientX /3}, ${e.clientY /2}, ${e.clientX / e.clientY * 20})`;
-        const x = e.clientX;
-        const y = e.clientY;
-        h1.textContent = `${x}, ${y}`;
-
-        })
-
-body.addEventListener("click", (e) => {
-    const x = e.clientX;
-    const y = e.clientY;
-    const color = getColor(e);
-    body.style.backgroundColor = color;
+//         const x = e.clientX;
+//         const y = e.clientY;
+//         h1.textContent = `${x}, ${y}`;
+//
+//         })
+//
+// body.addEventListener("click", (e) => {
+//     const x = e.clientX;
+//     const y = e.clientY;
+//     const color = getColor(e);
+//     body.style.backgroundColor = color;
     //
     //     const red = x / width * 100;
     //     const green = y / height * 100;
     //     const blue = ((x / width * 100) + (y / height * 100)) /2;
     //
     //     body.style.backgroundColor = `rgb(${red}%, ${green}%, ${blue}%)`;
-})
-const getColor = (e) => {
-    const x = e.clientX;
-    const y = e.clientY;
-    if ((x % 2) && (y % 2) === 0) {
-        console.log("sa parzyste");
-        return "red";
-    } else if ((x % 2) && (y % 2) !== 0) {
-        return "blue";
-        console.log("nie sa parzyste");
-    } else {
-        console.log("sa od siebie rozne");
-        return "green";
-    }
-}
+// })
+// const getColor = (e) => {
+//     const x = e.clientX;
+//     const y = e.clientY;
+//     if ((x % 2) && (y % 2) === 0) {
+//         console.log("sa parzyste");
+//         return "red";
+//     } else if ((x % 2) && (y % 2) !== 0) {
+//         return "blue";
+//         console.log("nie sa parzyste");
+//     } else {
+//         console.log("sa od siebie rozne");
+//         return "green";
+//     }
+// }
 
 // piatyty projekt --------->
 //
