@@ -18,12 +18,18 @@ let divY = 50;
 div.style.left = `${divX}px`;
 div.style.top = `${divY}px`;
 let drawActive = false;
+let insertDivX;
+let insertDivY;
 
-
-div.addEventListener("mousedown", () => {
+div.addEventListener("mousedown", (e) => {
 console.log("grab works");
 div.style.backgroundColor = "grey";
-drawActive = !drawActive;
+drawActive = !drawActive; // false = true
+    insertDivX = e.offsetX;
+    insertDivY = e.offsetY;
+    console.log(insertDivX , insertDivY);
+
+
 })
 
 div.addEventListener("mousemove", (e) => {
@@ -38,7 +44,7 @@ div.style.top = `${divY - 100}px`;
 div.addEventListener("mouseup", () => {
 console.log("drop works");
 div.style.backgroundColor = "black";
-    drawActive = !drawActive;
+    drawActive = !drawActive; // true = false
 })
 
 
