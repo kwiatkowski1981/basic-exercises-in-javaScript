@@ -32,23 +32,11 @@ document.body.addEventListener("mousemove", (e) => {
 
         })
 
-
 body.addEventListener("click", (e) => {
-    const xx = event.clientX;
-    const yy = event.clientY;
-    if ((xx % 2) && (yy % 2) == 0 ){
-        console.log("sa parzyste");
-        body.style.backgroundColor = "red";
-    } else if ((xx % 2) && (yy % 2) != 0 ){
-        body.style.backgroundColor = "blue";
-        console.log("nie sa parzyste");
-    } else {
-        console.log("sa rozne od siebie");
-        body.style.backgroundColor = "green";
-
-    }
-
-
+    const x = e.clientX;
+    const y = e.clientY;
+    const color = getColor(e);
+    body.style.backgroundColor = color;
     //
     //     const red = x / width * 100;
     //     const green = y / height * 100;
@@ -56,6 +44,20 @@ body.addEventListener("click", (e) => {
     //
     //     body.style.backgroundColor = `rgb(${red}%, ${green}%, ${blue}%)`;
 })
+const getColor = (e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+    if ((x % 2) && (y % 2) === 0) {
+        console.log("sa parzyste");
+        return "red";
+    } else if ((x % 2) && (y % 2) !== 0) {
+        return "blue";
+        console.log("nie sa parzyste");
+    } else {
+        console.log("sa od siebie rozne");
+        return "green";
+    }
+}
 
 // piatyty projekt --------->
 //
