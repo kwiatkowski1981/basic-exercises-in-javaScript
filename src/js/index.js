@@ -23,9 +23,11 @@ console.log("grab works");
 div.style.backgroundColor = "grey";
 })
 
-div.addEventListener("mousemove", () => {
-console.log("move works");
-div.style.backgroundColor = "blue";
+div.addEventListener("mousemove", (e) => {
+divX = e.clientX;
+divY = e.clientY;
+div.style.left = `${divX}px`;
+div.style.top = `${divY}px`;
 })
 
 div.addEventListener("mouseup", () => {
