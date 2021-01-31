@@ -26,8 +26,8 @@ div.style.backgroundColor = "grey";
 div.addEventListener("mousemove", (e) => {
 divX = e.clientX;
 divY = e.clientY;
-div.style.left = `${divX}px`;
-div.style.top = `${divY}px`;
+div.style.left = `${divX - 100}px`;
+div.style.top = `${divY - 100}px`;
 })
 
 div.addEventListener("mouseup", () => {
