@@ -8,7 +8,13 @@ import '../scss/main.scss';
 
 console.log('HELLO 🚀');
 // ósmy projekt --------->
+let red = 100;
+let green = 100;
+let blue = 100;
 
+document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+
+window.addEventListener("keydown", changeColor)
 
 // siódmy projekt --------->
 //
