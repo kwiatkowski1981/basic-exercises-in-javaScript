@@ -7,54 +7,47 @@ import '../scss/main.scss';
 /* place your code below */
 
 console.log('HELLO 🚀');
+// ósmy projekt --------->
+
 
 // siódmy projekt --------->
+//
+//
+// const div = document.querySelector('div');
 
+// let divX = 150;
+// let divY = 50;
+// div.style.left = `${divX}px`;
+// div.style.top = `${divY}px`;
+// let drawActive = false;
+// let insertDivX;
+// let insertDivY;
+//
+// div.addEventListener("mousedown", (e) => {
+// console.log("grab works");
+// div.style.backgroundColor = "grey";
+// drawActive = !drawActive; // false = true
+//     insertDivX = e.offsetX;
+//     insertDivY = e.offsetY;
+//     console.log(insertDivX , insertDivY);
 
-const div = document.querySelector('div');
-
-let divX = 150;
-let divY = 50;
-div.style.left = `${divX}px`;
-div.style.top = `${divY}px`;
-let drawActive = false;
-let insertDivX;
-let insertDivY;
-
-div.addEventListener("mousedown", (e) => {
-console.log("grab works");
-div.style.backgroundColor = "grey";
-drawActive = !drawActive; // false = true
-    insertDivX = e.offsetX;
-    insertDivY = e.offsetY;
-    console.log(insertDivX , insertDivY);
-
-
-})
-
-div.addEventListener("mousemove", (e) => {
-    if (drawActive){
-        console.log("move works");
-divX = e.clientX;
-divY = e.clientY;
-div.style.left = `${divX - 100}px`;
-div.style.top = `${divY - 100}px`;
-}})
-
-div.addEventListener("mouseup", () => {
-console.log("drop works");
-div.style.backgroundColor = "black";
-    drawActive = !drawActive; // true = false
-})
-
-
-
-
-
-
-
-
-
+//
+// })
+//
+// div.addEventListener("mousemove", (e) => {
+//     if (drawActive){
+//         console.log("move works");
+// divX = e.clientX - insertDivX;
+// divY = e.clientY - insertDivY;
+// div.style.left = `${divX}px`;
+// div.style.top = `${divY}px`;
+// }})
+//
+// div.addEventListener("mouseup", () => {
+// console.log("drop works");
+// div.style.backgroundColor = "black";
+//     drawActive = !drawActive; // true = false
+// })
 
 // szosty projekt --------->
 // const h1 = document.querySelector('h1');
