@@ -16,36 +16,39 @@ document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
     const changeColor = (e) => {
         console.log(e.keyCode, e.which);
 
-    const pressdButton = e.keyCode;
+    const pressedButton = e.keyCode;
     const arrowUp = 38;
     const arrowDown = 40;
 
-    // if (pressdButton === arrowUp){
-    //     red += 10;
-    //     green += 10;
-    //     blue += 10;
-    // } else if (pressdButton === arrowDown) {
+    // if (pressedButton === arrowUp){
+    //     if (red < 255) {
+    //             red += 10;
+    //             green += 10;
+    //             blue += 10;
+    //     }
+    // } else if (pressedButton === arrowDown) {
+    //     if (red >= 0) {
     //     red -= 10;
     //     green -= 10;
     //     blue -=10;
     //     console.log("sciemniam");
     // }
+    //         }
     //     document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 
-    switch (pressdButton){
+    switch (pressedButton){
         case arrowUp:
-            red += 10;
-            green += 10;
-            blue += 10;
-            document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+            // red += 10;
+            // green += 10;
+            // blue += 10;
+            document.body.style.backgroundColor = `rgb(${red < 255 ? red++ : red}, ${green < 255 ? green++ : green}, ${blue < 255 ? blue++ : blue})`;
             break;
         case arrowDown:
-            red -= 10;
-            green -= 10;
-            blue -=10;
-            document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+            // red -= 10;
+            // green -= 10;
+            // blue -=10;
+            document.body.style.backgroundColor = `rgb(${red > 0 ? --red : red}, ${green> 0 ? --green : green}, ${blue> 0 ? --blue : blue})`;
             break;
-
     }
 
 };
