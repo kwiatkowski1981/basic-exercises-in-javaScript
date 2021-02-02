@@ -13,7 +13,42 @@ let green = 100;
 let blue = 100;
 
 document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+    const changeColor = (e) => {
+        console.log(e.keyCode, e.which);
 
+    const pressdButton = e.keyCode;
+    const arrowUp = 38;
+    const arrowDown = 40;
+
+    // if (pressdButton === arrowUp){
+    //     red += 10;
+    //     green += 10;
+    //     blue += 10;
+    // } else if (pressdButton === arrowDown) {
+    //     red -= 10;
+    //     green -= 10;
+    //     blue -=10;
+    //     console.log("sciemniam");
+    // }
+    //     document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+
+    switch (pressdButton){
+        case arrowUp:
+            red += 10;
+            green += 10;
+            blue += 10;
+            document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+            break;
+        case arrowDown:
+            red -= 10;
+            green -= 10;
+            blue -=10;
+            document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+            break;
+
+    }
+
+};
 window.addEventListener("keydown", changeColor)
 
 // siódmy projekt --------->
