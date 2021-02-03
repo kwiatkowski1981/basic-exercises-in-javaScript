@@ -7,18 +7,22 @@ import '../scss/main.scss';
 /* place your code below */
 
 console.log('HELLO 🚀');
-// ósmy projekt --------->
-let red = 100;
-let green = 100;
-let blue = 100;
+//  dziewiąty projekt ------------->
 
-document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
-    const changeColor = (e) => {
-        console.log(e.keyCode, e.which);
 
-    const pressedButton = e.keyCode;
-    const arrowUp = 38;
-    const arrowDown = 40;
+
+//  ósmy projekt --------->
+// let red = 100;
+// let green = 100;
+// let blue = 100;
+//
+// document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+//     const changeColor = (e) => {
+//         console.log(e.keyCode, e.which);
+//
+//     const pressedButton = e.keyCode;
+//     const arrowUp = 38;
+//     const arrowDown = 40;
 
     // if (pressedButton === arrowUp){
     //     if (red < 255) {
@@ -36,23 +40,23 @@ document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
     //         }
     //     document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 
-    switch (pressedButton){
-        case arrowUp:
-            // red += 10;
-            // green += 10;
-            // blue += 10;
-            document.body.style.backgroundColor = `rgb(${red < 255 ? red++ : red}, ${green < 255 ? green++ : green}, ${blue < 255 ? blue++ : blue})`;
-            break;
-        case arrowDown:
-            // red -= 10;
-            // green -= 10;
-            // blue -=10;
-            document.body.style.backgroundColor = `rgb(${red > 0 ? --red : red}, ${green> 0 ? --green : green}, ${blue> 0 ? --blue : blue})`;
-            break;
-    }
-
-};
-window.addEventListener("keydown", changeColor)
+//     switch (pressedButton){
+//         case arrowUp:
+//             // red += 10;
+//             // green += 10;
+//             // blue += 10;
+//             document.body.style.backgroundColor = `rgb(${red < 255 ? red++ : red}, ${green < 255 ? green++ : green}, ${blue < 255 ? blue++ : blue})`;
+//             break;
+//         case arrowDown:
+//             // red -= 10;
+//             // green -= 10;
+//             // blue -=10;
+//             document.body.style.backgroundColor = `rgb(${red > 0 ? --red : red}, ${green> 0 ? --green : green}, ${blue> 0 ? --blue : blue})`;
+//             break;
+//     }
+//
+// };
+// window.addEventListener("keydown", changeColor)
 
 // siódmy projekt --------->
 //
