@@ -11,8 +11,8 @@ console.log('HELLO 🚀');
 
 const input = document.getElementById('pass');
 const div = document.querySelector('.message');
-const password = "user";
-const message = "wyjechałam na zawsze";
+const password = ["user", "wiosna"];
+const message = ["wyjechałam na zawsze", "mate wiosna"];
 
 
 input.addEventListener("input", (e) => {
@@ -26,8 +26,13 @@ div.style.padding = `15px`;
     }
 })
 
-div.addEventListener('focus', () => {
+// można do obu zamiast add i remove uzyć toggle.
+input.addEventListener('focus', (e) => {
+e.target.classList.add('active');
+} )
 
+input.addEventListener('blur', (e) => {
+e.target.classList.remove('active');
 } )
 
 //  ósmy projekt --------->
