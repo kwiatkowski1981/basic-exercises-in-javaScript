@@ -9,7 +9,20 @@ import '../scss/main.scss';
 console.log('HELLO 🚀');
 //  dziewiąty projekt ------------->
 
+const input = document.getElementById('pass');
+const div = document.querySelector('.message');
+const password = "user";
+const message = "wyjechałam na zawsze";
 
+
+input.addEventListener("input", (e) => {
+    // console.log(e.target.value);
+if (password === e.target.value){
+
+}
+
+
+})
 
 //  ósmy projekt --------->
 // let red = 100;
