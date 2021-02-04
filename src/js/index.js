@@ -18,11 +18,17 @@ const message = "wyjechałam na zawsze";
 input.addEventListener("input", (e) => {
     // console.log(e.target.value);
 if (password === e.target.value){
-
-}
-
-
+div.textContent = message;
+div.style.padding = `15px`;
+} else {
+    div.textContent = '';
+    div.style.padding = `0px`;
+    }
 })
+
+div.addEventListener('focus', () => {
+
+} )
 
 //  ósmy projekt --------->
 // let red = 100;
