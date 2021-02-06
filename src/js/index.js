@@ -7,24 +7,48 @@ import '../scss/main.scss';
 /* place your code below */
 
 console.log('HELLO 🚀');
+//  dziesiaty projekt ------------->
+
+
 //  dziewiąty projekt ------------->
 
-const input = document.getElementById('pass');
-const div = document.querySelector('.message');
-const password = ["user", "wiosna"];
-const message = ["wyjechałam na zawsze", "mate wiosna"];
+// const input = document.getElementById('pass');
+// const div = document.querySelector('.message');
+// // const passwords = "user";
+// // const messages = "wyjechałam na zawsze";
+//
+// const passwords = ["user", "wiosna"];
+// const messages = ["wyjechałam na zawsze", "mate wiosna"];
+//
+// input.addEventListener('input', (e) => {
+//     const text = e.target.value;
+//     // console.log(text);
+// passwords.forEach((password, index) => {
+//     if (password === text) {
+// div.textContent = messages[index];
+// div.style.padding = `10px`;
+//
+//     }else {
+//             div.textContent = '';
+//             div.style.padding = `0px`;
+//     }
+// })
+//
+//
+// })
 
 
-input.addEventListener("input", (e) => {
+// input.addEventListener("input", (e) => {
     // console.log(e.target.value);
-if (password === e.target.value){
-div.textContent = message;
-div.style.padding = `15px`;
-} else {
-    div.textContent = '';
-    div.style.padding = `0px`;
-    }
-})
+// if (password === e.target.value){
+// div.textContent = message;
+// div.style.padding = `15px`;
+// } else {
+//     div.textContent = '';
+//     div.style.padding = `0px`;
+//     }
+
+// })
 
 // można do obu zamiast add i remove uzyć toggle.
 input.addEventListener('focus', (e) => {
