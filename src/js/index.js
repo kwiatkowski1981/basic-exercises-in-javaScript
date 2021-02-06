@@ -10,25 +10,36 @@ console.log('HELLO 🚀');
 //  dziesiaty projekt ------------->
 
 const input = document.querySelector('input');
-const passwords = ['jedEN', 'DwA'];
-const messages = ["super", "działa!"];
+const div = document.querySelector('div');
+const passwords = ["jedEN", "DwA", "TRzy"];
+const messages = ["super", "działa!", "lol"];
+console.log(passwords);
+console.log(messages);
 
 const showMessage = (e) => {
+    const text = e.target.value.toLowerCase();
+    console.log(text);
 
-
-
+    passwords.forEach((password, index) => {
+        if ((password.toLowerCase()) === text){
+            console.log(text);
+            div.textContent = messages[index];
+        }
+    })
 }
 input.addEventListener("input", showMessage);
 
 //  dziewiąty projekt ------------->
 
-// const input = document.getElementById('pass');
-// const div = document.querySelector('.message');
+// const input = document.getElementById('pass')
+// const div = document.querySelector('div');
 // // const passwords = "user";
 // // const messages = "wyjechałam na zawsze";
 //
 // const passwords = ["user", "wiosna"];
 // const messages = ["wyjechałam na zawsze", "mate wiosna"];
+// console.log(passwords);
+// console.log(messages);
 //
 // input.addEventListener('input', (e) => {
 //     const text = e.target.value;
@@ -49,7 +60,7 @@ input.addEventListener("input", showMessage);
 
 
 // input.addEventListener("input", (e) => {
-    // console.log(e.target.value);
+//     console.log(e.target.value);
 // if (password === e.target.value){
 // div.textContent = message;
 // div.style.padding = `15px`;
@@ -57,17 +68,17 @@ input.addEventListener("input", showMessage);
 //     div.textContent = '';
 //     div.style.padding = `0px`;
 //     }
-
+//
 // })
 
 // można do obu zamiast add i remove uzyć toggle.
-input.addEventListener('focus', (e) => {
-e.target.classList.add('active');
-} )
-
-input.addEventListener('blur', (e) => {
-e.target.classList.remove('active');
-} )
+// input.addEventListener('focus', (e) => {
+// e.target.classList.add('active');
+// } )
+//
+// input.addEventListener('blur', (e) => {
+// e.target.classList.remove('active');
+// } )
 
 //  ósmy projekt --------->
 // let red = 100;
