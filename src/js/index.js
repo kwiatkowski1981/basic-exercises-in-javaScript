@@ -7,6 +7,14 @@ import '../scss/main.scss';
 /* place your code below */
 
 console.log('HELLO 🚀');
+
+//  jedenasty projekt ------------->
+
+for (let i = 1; i <100 ; i++) {
+    console.log(i)
+}
+
+
 //  dziesiaty projekt ------------->
 //
 // const input = document.querySelector('input');
