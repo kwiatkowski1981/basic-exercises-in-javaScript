@@ -8,7 +8,30 @@ import '../scss/main.scss';
 
 console.log('HELLO 🚀');
 //  dziesiaty projekt ------------->
-
+//
+// const input = document.querySelector('input');
+// const div = document.querySelector('div');
+// const passwords = ["jedEN", "DwA", "TRzy"];
+// const messages = ["super", "działa!", "lol"];
+// console.log(passwords);
+// console.log(messages);
+//
+// const showMessage = (e) => {
+//     const text = e.target.value.toLowerCase();
+//     console.log(text);
+//
+//     passwords.forEach((password, index) => {
+//         if ((password.toLowerCase()) === text){
+//             console.log(text);
+//             div.textContent = messages[index];
+//         }
+//
+//         // else {
+//         //     div.textContent = "makapaka";
+//         // }
+//     })
+// }
+// input.addEventListener("input", showMessage);
 
 //  dziewiąty projekt ------------->
 
