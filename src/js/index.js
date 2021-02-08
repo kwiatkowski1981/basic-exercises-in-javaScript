@@ -8,32 +8,39 @@ import '../scss/main.scss';
 
 console.log('HELLO 🚀');
 
+
+// czternasty projekt --------------->
+
+
+
+
+
 //  trzynasty projekt ------------->
 
 // kod ma sie skladac z losowych 10 znakow
 
-const btn = document.querySelector('button');
-const section = document.querySelector('section');
-const chars = 'ABCDEFGHIJKLMNOPRSTUVWYZabcdefghijklmnoprstuvwyz0123456789!@&?';
-const codesNumber = 1000;
-const charNumber = 15;
-let code = '';
-console.log(chars);
-console.log(chars.length);
-const codesGenerator = () => {
-
-    for (let i = 0; i <codesNumber ; i++) {
-        for (let j = 0; j < charNumber; j++) {
-            const charIndex = Math.floor(Math.random() * chars.length);
-            const singleChar = chars.charAt(charIndex)
-            code += singleChar;
-        }
-        const div = document.createElement('div');
-        div.textContent = code;
-        section.appendChild(div);
-    }
-}
-btn.addEventListener("click", codesGenerator);
+// const btn = document.querySelector('button');
+// const section = document.querySelector('section');
+// const chars = 'ABCDEFGHIJKLMNOPRSTUVWYZabcdefghijklmnoprstuvwyz0123456789!@&?';
+// const codesNumber = 1000;
+// const charNumber = 15;
+// let code = '';
+// console.log(chars);
+// console.log(chars.length);
+// const codesGenerator = () => {
+//
+//     for (let i = 0; i <codesNumber ; i++) {
+//         for (let j = 0; j < charNumber; j++) {
+//             const charIndex = Math.floor(Math.random() * chars.length);
+//             const singleChar = chars.charAt(charIndex)
+//             code += singleChar;
+//         }
+//         const div = document.createElement('div');
+//         div.textContent = code;
+//         section.appendChild(div);
+//     }
+// }
+// btn.addEventListener("click", codesGenerator);
 
 //  dwunasty projekt ------------->
 
