@@ -9,26 +9,25 @@ import '../scss/main.scss';
 console.log('HELLO 🚀');
 
 //  jedenasty projekt ------------->
-
-for (let i = 1; i <=100 ; i++) {
-
-    let result = "";
-
-    if ((i % 3 === 0) && ( i % 5 === 0)) {
-        result = "FizBuzz";
-        console.log(result);
-    }else if (i % 3 === 0){
-        result = "Fiz";
-        console.log(result);
-    }else if (i % 5 === 0){
-        result = "Buz";
-        console.log(result);
-    }else {
-        console.log(i);
-    }
-
-    // console.log(i)
-}
+//
+// for (let i = 1; i <=100 ; i++) {
+//
+//     let result = "";
+//
+//     if ((i % 3 === 0) && ( i % 5 === 0)) {
+//         result = "FizBuzz";
+//         console.log(result);
+//     }else if (i % 3 === 0){
+//         result = "Fiz";
+//         console.log(result);
+//     }else if (i % 5 === 0){
+//         result = "Buz";
+//         console.log(result);
+//     }else {
+//         console.log(i);
+//     }
+//
+// }
 
 
 //  dziesiaty projekt ------------->
