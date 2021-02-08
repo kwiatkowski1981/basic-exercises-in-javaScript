@@ -20,6 +20,11 @@ const charNumber = 10;
 
 const codesGenerator = () => {
 
+    for (let i = 0; i <codesNumber ; i++) {
+
+
+
+    }
 
 }
 
