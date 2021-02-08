@@ -22,7 +22,9 @@ const codesGenerator = () => {
 
     for (let i = 0; i <codesNumber ; i++) {
 
+        for (let j = 0; j < charNumber; j++) {
 
+        }
 
     }
 
