@@ -9,7 +9,15 @@ import '../scss/main.scss';
 console.log('HELLO 🚀');
 //  dwunasty projekt ------------->
 
+const btn = document.querySelector('button');
+const names = ["Jagienka", "Dobrawa(Dobrusia)", "Daria", "Asia", "Kira", "Marysia", "Anastazja"];
 
+const nameGenerator =  () => {
+
+
+}
+
+btn.addEventListener("click", nameGenerator);
 
 
 
