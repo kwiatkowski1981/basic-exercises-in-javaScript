@@ -10,9 +10,16 @@ console.log('HELLO 🚀');
 
 //  trzynasty projekt ------------->
 
+const btn = document.querySelector('button');
+const div = document.querySelector('div');
+
+const codesGenerator = () => {
 
 
+}
 
+
+btn.addEventListener("click", codesGenerator);
 
 //  dwunasty projekt ------------->
 
