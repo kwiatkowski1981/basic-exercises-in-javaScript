@@ -11,12 +11,16 @@ console.log('HELLO 🚀');
 
 const btn = document.querySelector('button');
 const div = document.querySelector('div');
-const names = ["Jagienka", "Dobrawa(Dobrusia)", "Daria", "Asia", "Kira", "Marysia", "Anastazja"];
-const nameIndex = Math.floor(Math.random() * names.length);
+const names = ["Jagienka", "Dobrawa(Dobrusia)", "Daria", "Asia", "Kira", "Marysia", "Anastazja", "Stanisława",
+    "Makapaka", "Kasia", "Danusia", "Agata"];
+
 // console.log(nameIndex);
+
 const nameGenerator =  () => {
 
-div.textContent = nameIndex;
+    const nameIndex = Math.floor(Math.random() * names.length);
+    div.textContent = names[nameIndex];
+    console.log(nameIndex);
 }
 
 btn.addEventListener("click", nameGenerator);
