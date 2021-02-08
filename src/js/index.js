@@ -14,6 +14,9 @@ console.log('HELLO 🚀');
 
 const btn = document.querySelector('button');
 const section = document.querySelector('section');
+const chars = 'ABCDEFGHIJKLMNOPRSTUVWYZ0123456789';
+const codesNumber = 1000;
+const charNumber = 10;
 
 const codesGenerator = () => {
 
