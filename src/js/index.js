@@ -7,26 +7,33 @@ import '../scss/main.scss';
 /* place your code below */
 
 console.log('HELLO 🚀');
+
+//  trzynasty projekt ------------->
+
+
+
+
+
 //  dwunasty projekt ------------->
 
-const btn = document.querySelector('button');
-const div = document.querySelector('div');
-const names = ["Jagienka", "Dobrawa(Dobrusia)", "Daria", "Asia", "Kira", "Marysia", "Anastazja", "Stanisława",
-    "Makapaka", "Kasia", "Danusia", "Agata"];
-const prefixs = ["Wydaje mi się ", "Mam wrażenie ", "Szczeże powiedziawszy ", "Myślę ", "Szczerze uważam ",
- "Na 100% twierdzę ", "Jestem pewien "];
-
-
-const nameGenerator =  () => {
-
-    const nameIndex = Math.floor(Math.random() * names.length);
-    // const prefixIndex = Math.floor(Math.random() * prefixs.length);
-    div.textContent = `${prefixs[Math.floor(Math.random() * prefixs.length)]}, że najlepsze będzie imię: ${names[nameIndex]}.`;
-    console.log(nameIndex);
-    // console.log(prefixIndex);
-}
-
-btn.addEventListener("click", nameGenerator);
+// const btn = document.querySelector('button');
+// const div = document.querySelector('div');
+// const names = ["Jagienka", "Dobrawa(Dobrusia)", "Daria", "Asia", "Kira", "Marysia", "Anastazja", "Stanisława",
+//     "Makapaka", "Kasia", "Danusia", "Agata"];
+// const prefixs = ["Wydaje mi się ", "Mam wrażenie ", "Szczeże powiedziawszy ", "Myślę ", "Szczerze uważam ",
+//  "Na 100% twierdzę ", "Jestem pewien "];
+//
+//
+// const nameGenerator =  () => {
+//
+//     const nameIndex = Math.floor(Math.random() * names.length);
+//     // const prefixIndex = Math.floor(Math.random() * prefixs.length);
+//     div.textContent = `${prefixs[Math.floor(Math.random() * prefixs.length)]}, że najlepsze będzie imię: ${names[nameIndex]}.`;
+//     console.log(nameIndex);
+//     // console.log(prefixIndex);
+// }
+//
+// btn.addEventListener("click", nameGenerator);
 
 
 
