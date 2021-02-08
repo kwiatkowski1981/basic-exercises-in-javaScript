@@ -10,8 +10,10 @@ console.log('HELLO 🚀');
 
 //  trzynasty projekt ------------->
 
+// kod ma sie skladac z losowych 10 znakow
+
 const btn = document.querySelector('button');
-const div = document.querySelector('div');
+const section = document.querySelector('section');
 
 const codesGenerator = () => {
 
