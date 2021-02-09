@@ -24,6 +24,7 @@ const newName = input.value;
 if (input.value.length) {  // sprawdzam czy cokolwiek zostalo wpisane w pole input
     for (name of names){    // sprawdzam za pomoca petli czy jakies imie zostalo juz dodane
       if (name === newName){
+          alert("takie imię zostało już dodane");
           return    //jesli istnieje to return konczy dzialanie funkcji
       }
     }
