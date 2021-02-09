@@ -11,7 +11,30 @@ console.log('HELLO 🚀');
 
 // czternasty projekt --------------->
 
+const input = document.querySelector('input');
+const btn = document.querySelector('button');
+const div = document.querySelector('div');
 
+const names = [];
+
+const addName = (e) => {
+    e.preventDefault();
+const newName = input.value;
+
+if (input.value.length) {  // sprawdzam czy cokolwiek zostalo wpisane w pole input
+    for (name of names){    // sprawdzam za pomoca petli czy jakies imie zostalo juz dodane
+      if (name === newName){
+          return    //jesli istnieje to return konczy dzialanie funkcji
+      }
+    }
+names.push(newName);
+console.log(names);
+div.textContent += `${newName}, `;
+input.value = "";
+    }
+}
+
+btn.addEventListener("click", addName);
 
 
 
