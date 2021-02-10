@@ -12,11 +12,12 @@ console.log('HELLO 🚀');
 
 const input = document.querySelector('input');
 const btnAdd = document.querySelector('.btnAdd');
-const btnAdd = document.querySelector('.btnReset');
-const btnAdd = document.querySelector('.btnShow');
-const btnAdd = document.querySelector('.btnShowAll');
+const btnReset = document.querySelector('.btnReset');
+const btnShow = document.querySelector('.btnShow');
+const btnShowAll = document.querySelector('.btnShowAll');
 
-
+const advices = ["walcz", "przemyśl to jeszcze raz"];
+console.log(advices);
 
 
 
