@@ -10,6 +10,11 @@ console.log('HELLO 🚀');
 
 // pietnasty projekt -------------->
 
+const input = document.querySelector('input');
+const btnAdd = document.querySelector('.btnAdd');
+const btnAdd = document.querySelector('.btnReset');
+const btnAdd = document.querySelector('.btnShow');
+const btnAdd = document.querySelector('.btnShowAll');
 
 
 
