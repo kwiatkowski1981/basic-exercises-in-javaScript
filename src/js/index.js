@@ -20,6 +20,12 @@ const advices = ["walcz", "przemyśl to jeszcze raz"];
 console.log(advices);
 
 
+const addAdvice = () => {
+
+
+
+}
+btnAdd.addEventListener('click', addAdvice);
 
 
 // czternasty projekt --------------->
