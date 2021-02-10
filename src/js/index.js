@@ -22,11 +22,24 @@ console.log(advices);
 
 const addAdvice = () => {
 
-
-
 }
 btnAdd.addEventListener('click', addAdvice);
 
+const resetAdvice = () => {
+
+}
+
+btnReset.addEventListener('click', resetAdvice);
+
+const showAdvice = () => {
+
+}
+btnShow.addEventListener('click', showAdvice);
+
+const showAllAdvices = () => {
+
+}
+btnAdd.addEventListener('click', showAllAdvices);
 
 // czternasty projekt --------------->
 //
