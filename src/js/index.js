@@ -39,7 +39,7 @@ btnShow.addEventListener('click', showAdvice);
 const showAllAdvices = () => {
 
 }
-btnAdd.addEventListener('click', showAllAdvices);
+btnShowAll.addEventListener('click', showAllAdvices);
 
 // czternasty projekt --------------->
 //
