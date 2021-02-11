@@ -13,7 +13,7 @@ console.log('HELLO 🚀');
 const input = document.querySelector('input');
 const btnAdd = document.querySelector('.btnAdd');
 const btnReset = document.querySelector('.btnReset');
-const btnShow = document.querySelector('.btnShow');
+const btnDrawAdvice = document.querySelector('.btnShow');
 const btnShowAll = document.querySelector('.btnShowAll');
 const div = document.getElementById('message');
 
@@ -34,6 +34,7 @@ const addAdvice = (e) => {
         advices.push(newAdvice);
         console.log(advices);
         div.textContent = `Dodano ${newAdvice} do bazy porad.`;
+        input.value = "";
     }else {
         div.textContent = "wpisz jakas porade w okno input";
     }
@@ -53,10 +54,20 @@ const resetAdvice = (e) => {
 }
 btnReset.addEventListener('click', resetAdvice);
 
-const showAdvice = (e) => {
+const drawAdvice = (e) => {
     e.preventDefault();
+    const index = Math.floor(Math.random() * advices.length);
+    let randomAdvice = advices[index];
+    console.log(index);
+    if (advices.length !== 0){
+        div.textContent = randomAdvice;
+    }else {
+        div.textContent = "brak wpisów w bazie danych";
+    }
+
+
 }
-btnShow.addEventListener('click', showAdvice);
+btnDrawAdvice.addEventListener('click', drawAdvice);
 
 
 const showAllAdvices = () => {
