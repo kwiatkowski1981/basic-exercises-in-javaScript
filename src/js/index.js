@@ -15,29 +15,55 @@ const btnAdd = document.querySelector('.btnAdd');
 const btnReset = document.querySelector('.btnReset');
 const btnShow = document.querySelector('.btnShow');
 const btnShowAll = document.querySelector('.btnShowAll');
+const div = document.getElementById('message');
 
-const advices = ["walcz", "przemyśl to jeszcze raz"];
+let advices = ["cos tam", "jakies durne cos"];
 console.log(advices);
 
 
-const addAdvice = () => {
-
+const addAdvice = (e) => {
+    e.preventDefault();
+    const newAdvice = input.value;
+    if (input.value.length){
+        for (const advice of advices){
+            if (advice === newAdvice){
+                div.textContent = "taka porada znajduje się już w bazie";
+                return;
+            }
+        }
+        advices.push(newAdvice);
+        console.log(advices);
+        div.textContent = `Dodano ${newAdvice} do bazy porad.`;
+    }else {
+        div.textContent = "wpisz jakas porade w okno input";
+    }
 }
 btnAdd.addEventListener('click', addAdvice);
 
-const resetAdvice = () => {
-
+const resetAdvice = (e) => {
+    e.preventDefault();
+    if (advices.length !== 0){
+        advices = [];
+        console.log(advices);
+        div.textContent = "";
+        // alert( "baza porad została wykasowana");
+    }else {
+        div.textContent = "brak wpisów w bazie danych";
+    }
 }
-
 btnReset.addEventListener('click', resetAdvice);
 
-const showAdvice = () => {
-
+const showAdvice = (e) => {
+    e.preventDefault();
 }
 btnShow.addEventListener('click', showAdvice);
 
+
 const showAllAdvices = () => {
 
+    if (advices.length !== false){
+        alert(advices);
+    }
 }
 btnShowAll.addEventListener('click', showAllAdvices);
 
@@ -52,9 +78,8 @@ btnShowAll.addEventListener('click', showAllAdvices);
 // const addName = (e) => {
 //     e.preventDefault();
 // const newName = input.value;
-//
-// if (input.value.length) {  // sprawdzam czy cokolwiek zostalo wpisane w pole input
-//     for (name of names){    // sprawdzam za pomoca petli czy jakies imie zostalo juz dodane
+// if (input.value.length) {                // sprawdzam czy cokolwiek zostalo wpisane w pole input
+//     for (name of names){                 // sprawdzam za pomoca petli czy jakies imie zostalo juz dodane
 //       if (name === newName){
 //           alert("takie imię zostało już dodane");
 //           return    //jesli istnieje to return konczy dzialanie funkcji
